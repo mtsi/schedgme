@@ -45,14 +45,9 @@ h1, h2, h3 {
 
 
 
-.city-search {
-    display: inline-block;
-    position: relative;
-    float: left;
-    margin-left: 5px;
-}
-
-.state-search {
+.city-search,
+.state-search,
+.specialty-search {
     display: inline-block;
     position: relative;
     float: left;
@@ -124,3 +119,5 @@ h1, h2, h3 {
     margin-right: 5px;
     cursor: pointer;
 }
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

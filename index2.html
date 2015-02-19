@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SchedgMe - The Personal Trainer Scheduling System</title>
+	<!-- INCLUDE REQUIRED THIRD PARTY LIBRARY JAVASCRIPT AND CSS -->
+	<script type="text/javascript" src="js/angular.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/ui-bootstrap-custom-tpls-0.12.0.min.js"></script>
+	<!-- INCLUDE APPLICATION SPECIFIC CSS AND JAVASCRIPT -->
+	<script type="text/javascript" src="js/SchedgMeApp/app.js"></script>
+	<script type="text/javascript" src="js/SchedgMeApp/controllers/mainController.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+  <script>
+    $(".dropdown-menu li a").click(function(){
+      $(this).parents(".dropdown").find('.selection').text($(this).text());
+      $(this).parents(".dropdown").find('.selection').val($(this).text());
+    });
+  </script>
+</head>
+<body>
+    <div class='banner'>
+        <div class='container'>
+            <h1>SCHEDULE TRAINING SESSIONS</h1>
+        </div>
+    </div>
+	<div class="container main-frame" ng-app="SchedgMeApp" ng-controller="mainController" ng-init="init()">
+		<div class="search-box row-fluid form-inline">
+	      <div class="dropdown search-control">
+	        <button type="button" class="btn btn-default dropdown-toggle" id="dropdownTrainers" data-toggle="dropdown" aria-expanded="true">
+	          <span class="selection">Find a Trainer</span>
+	          <span class="caret"></span>
+	        </button>
+	        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownTrainers">
+	          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Chris Albert</a></li>
+	          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Michael Mahony</a></li>
+	          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CT Fletcher</a></li>
+	          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rob Johnson</a></li>
+	        </ul>
+	      </div>
+	      <div class="city-search">
+	        <input type="text" name="citySearch" placeholder="Enter city..." />
+	      </div>
+	      <div class="dropdown state-search">
+	          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownStates" data-toggle="dropdown" aria-expanded="true">
+	            Pick a State
+	            <span class="caret"></span>
+	          </button>
+	          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownStates">
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alabama</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alaska</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Arizona</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Arkansas</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">California</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Colorado</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Connecticut</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Deleware</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">District of Columbia</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Florida</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Georgia</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hawaii</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Idaho</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Illinois</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Indiana</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Iowa</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kansas</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kentucky</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Louisiana</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maine</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maryland</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Massacheusetts</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Michigan</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Minnesota</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mississippi</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Missouri</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Montana</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nebraska</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Neveda</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New Hampshire</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New Jersey</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New Mexico</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">New York</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">North Carolina</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">North Dakota</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ohio</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oaklahoma</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oregon</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Pennsylvania</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rhode Island</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">South Carolina</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">South Dakota</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tennessee</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Texas</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Utah</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vermont</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Virginia</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Washington</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">West Virginia</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Wisconsin</a></li>
+	            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Wyoming</a></li>
+	          </ul>
+	      </div>
+	    </div>
+	        <div class="results-top"></div>
+	        <div class="results-container">
+	            <ul class="episode-list"></ul>
+	        </div>
+	        <div class="results-bottom"></div>
+	</div>
+  
+</body>
+</html>
