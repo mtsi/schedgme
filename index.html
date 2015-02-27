@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="SchedgMeApp">
 <head>
 	<title>SchedgMe - The Personal Trainer Scheduling System</title>
 	<!-- INCLUDE REQUIRED THIRD PARTY LIBRARY JAVASCRIPT AND CSS -->
@@ -17,7 +17,7 @@
             <h1>SCHEDULE TRAINING SESSIONS</h1>
         </div>
     </div>
-	<div class="container main-frame" ng-app="SchedgMeApp" ng-controller="mainController" ng-init="init()">
+	<div class="container main-frame"  ng-controller="mainController" ng-init="init()">
     <!--begin trainer dropdown-->
 		<div class="search-box row-fluid form-inline" ng-controller="DropdownCtrl">
       <div class="btn-group search-control" dropdown>
@@ -60,6 +60,7 @@
           </ul>
       </div>
       <!--end specialty dropdown-->
+      
     </div>
         <div class="results-top"></div>
         <div class="results-container">

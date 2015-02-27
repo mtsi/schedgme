@@ -26,6 +26,8 @@ app.controller('DropdownCtrl', function($scope, $log){
 		$scope.status.isopen = !$scope.status.isopen;
 	};
 
+	
+
 	$scope.actions = [
 		{id: 'calbert', name: 'Chris Albert'},
 		{id: 'mmahony', name: 'Mike Mahony'},
